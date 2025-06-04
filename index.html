@@ -4,46 +4,96 @@
   <meta charset="UTF-8">
   <title>My Personal Website</title>
   <style>
+    /* 背景画像 */
     body {
-      font-family: sans-serif;
-      margin: 40px;
-      line-height: 1.6;
+      margin: 0;
+      font-family: "Yu Gothic", sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #333;
     }
+
+    /* ナビゲーションメニュー */
+    nav {
+      background-color: rgba(255, 255, 255, 0.8);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* 全体のレイアウト */
+    .container {
+      padding-top: 80px; /* ナビゲーションの下に余白 */
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
     h2 {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
       text-align: center;
       border-bottom: 1px solid #ccc;
       padding-bottom: 5px;
       margin-top: 60px;
     }
+
     .section-content {
+      font-family: "Yu Gothic", sans-serif;
       text-align: left;
-      max-width: 800px;
-      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 60px;
+    }
+
+    html {
+      scroll-behavior: smooth; /* スムーズスクロール */
     }
   </style>
 </head>
 <body>
 
-  <h2>About</h2>
-  <div class="section-content">
-    <h1>
-      Nikkeller
-    </h1>
-    <p>某I県立I高校卒業</p>
-    <p>慶応義塾大学理工学部 電気情報工学科　学部3年</p>
-      
-    
-  </div>
+  <!-- ナビゲーション -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#news">News</a>
+  </nav>
 
-  <h2>Projects</h2>
-  <div class="section-content">
-    <!-- ここに書く -->
-  </div>
+  <div class="container">
+    <h2 id="about">About</h2>
+    <div class="section-content">
+      <!-- ここに書く -->
+    </div>
 
-  <h2>News</h2>
-  <div class="section-content">
-    <!-- ここに書く -->
+    <h2 id="projects">Projects</h2>
+    <div class="section-content">
+      <!-- ここに書く -->
+    </div>
+
+    <h2 id="news">News</h2>
+    <div class="section-content">
+      <!-- ここに書く -->
+    </div>
   </div>
 
 </body>
 </html>
+
